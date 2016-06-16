@@ -1,0 +1,11 @@
+body{
+  text-align: center;
+}
+.listItem {
+  border-radius: .5em;
+  text-align: left;
+  padding: 5px;
+}
+.list{
+  margin-bottom: 40px;
+}

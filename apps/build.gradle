@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion '19.1.0'
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file('appskhoj.jks')
+            keyAlias 'appsalias'
+            storePassword 'etc2198219'
+            keyPassword 'dm331897'
+        }
+    }
+
+}
+
+dependencies {
+
+    compile 'com.google.android.gms:play-services:4.2.42'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
